@@ -1,0 +1,38 @@
+.toolbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    font-size: 600;
+}
+
+.toolbar span {
+    margin-left: 5px;
+}
+
+table {
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+}
+
+thead {
+    border: 1px solid black;
+}
+
+.messageClass1 {
+    color: tomato;
+}
+
+.messageClass2 {
+    color: blueviolet;
+}
