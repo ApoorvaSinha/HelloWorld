@@ -96,8 +96,12 @@
     <h2>
         <font color={{mycolor2}}>=============================</font>
     </h2>
-    <h4>Selected Book: {{bname}}</h4>
-    <app-book-search (eventEmitter2)="msg=$event"></app-book-search>
+    <!-- <h4>Selected Book: {{bname}}</h4> -->
+
+    <app-book-search [searchBook]="bname" (eventEmitter2)="msg=$event">
+
+    </app-book-search>
+
 </div>
 
 

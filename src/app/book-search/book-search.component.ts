@@ -7,7 +7,7 @@ import { Component, OnInit,EventEmitter, Output,Input} from '@angular/core';
 })
 export class BookSearchComponent implements OnInit {
 
- 
+  result:boolean=false;
   @Input() searchBook="";
   @Output() eventEmitter2=new EventEmitter();
   
@@ -17,17 +17,16 @@ export class BookSearchComponent implements OnInit {
   }
 
   searchevent(){
-    const msg="Book Found!!";
-    /*Books=['Java Core','Spring Framework 5.0','Angular 10.0','HTML/CSS']
-    result:boolean=false;
-    
-    result=Books.includes(searchBook);
-    if(result===true)
-      msg="Book Found!!"
-    }
+    let msg="Book Found!!";
+    const Books=['Java Core','Spring Framework 5.0','Angular 10.0','HTML/CSS']
+        
+    this.result=Books.includes(this.searchBook);
+     if(this.result){
+      msg="Book Found!!";
+     }
     else{
-      msg="Book Not Found!!"
-    }*/
+      msg="Book Not Found!!";
+    }
     this.eventEmitter2.emit(msg);
 }
 }

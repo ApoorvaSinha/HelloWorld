@@ -65,7 +65,7 @@ export class AppComponent {
 
   bookInfo:Book[] | undefined;
   constructor(private bkinfo:BookDetailService){
-
+      
   }
   ngOnInit():void{
     this.bkinfo.getBookInfo().subscribe(booklist=>this.bookInfo=booklist);
